@@ -7,3 +7,20 @@
     text-align: center;
     padding: 20px 30px 20px 30px;
 }
+
+.homepageText{
+
+	position: relative;
+	margin-left: auto;
+	padding-top: 20px;
+	font-family: Dosis;	
+	font-size: 15px;
+	text-align: center;
+}
+
+#footer{
+	font-family: Dosis;
+	font-size: 10px;
+	text-align: center;	
+	padding-top: 20px;
+}
