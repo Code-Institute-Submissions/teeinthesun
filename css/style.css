@@ -1,0 +1,9 @@
+.titleCentered{
+
+	position: relative;
+    margin-left: auto;
+    font-family: Poiret One;
+    font-size: 70px;
+    text-align: center;
+    padding: 20px 30px 20px 30px;
+}
