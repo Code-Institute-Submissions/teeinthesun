@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>HOME - TEE IN THE SUN</title>
+	<link href="https://fonts.googleapis.com/css?family=Poiret+One|Dosis" rel="stylesheet"> 
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<style type="text/css">
+
+/*--- Navigation bar (for mobile) ---*/
+
+	nav{
+
+			font-family: Dosis;
+			margin: 30px auto 10px auto;
+			width: 100%;
+			display: flex; /*set as a flex container*/
+			flex-direction: column; /*mobile first approach*/
+			align-items:stretch;
+			border-radius: 10px;
+			padding: 0px;
+
+		} 
+
+	a{
+			text-decoration: none; /*removes bullets*/
+			color: #387a0e;
+			flex:1;		/*equal width to links*/
+			height: 30px;
+			font-family: Poiret One;
+			padding:10px 20px 0px 20px;
+			text-align: center;
+			font-size: 30px;
+			border-bottom:1px solid white;
+
+	}
+
+	
+	/* --- For Desktop --- */
+
+	@media screen and (min-width: 700px){
+
+		nav{
+
+			width: 90%;
+			flex-flow: row;/* across screen for desktop screen size*/
+			align-items:baseline;
+			
+			}
+
+		a{
+
+			font-size: 25px;
+			border: none;
+			font-family: Poiret One;
+
+		}
+
+	</style>
+
+</head>
+
+<body>
+
+	<nav>
+
+			<a href="TeeInTheSunHome.html"><strong>HOME</strong></a>
+
+			<a href="TeeInTheSunProperty.html">PROPERTY</a>
+
+			<a href="TeeInTheSunResort.html">RESORT</a>
+
+			<a href="TeeInTheSunPricing.html">PRICING</a>
+
+			<a href="TeeInTheSunBooking.html">BOOKING</a>
+
+	</nav>
+
+</body>
+
+</html>
