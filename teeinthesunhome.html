@@ -17,6 +17,22 @@
 
 /*--- Navigation bar (for mobile) ---*/
 
+	.container{
+
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-row-gap: 10px;
+	}
+
+	.header{
+
+		position: relative;
+    	font-family: Poiret One;
+    	font-size: 60px;
+    	text-align: center;
+    	padding: 20px 30px 20px 30px;
+	}
+
 	nav{
 
 			margin: 30px auto 10px auto;
@@ -59,6 +75,47 @@
 
 	}
 
+	.container{ 
+
+		padding-top: 20px; 
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat (6, auto);
+		
+	} 
+
+	.navigation{
+
+		grid-row: 1/2;
+		
+	}
+
+	.header{
+
+		grid-row: 2/3;
+		position: relative;
+    	font-family: Poiret One;
+    	font-size: 70px;
+    	text-align: center;
+    	padding: 20px 30px 20px 30px;
+	}
+
+	.landingImage{
+
+		grid-row: 3/5;
+
+	}
+
+	.homepageText{
+
+		grid-row: 5/6;
+	}
+
+	.footer{
+
+		grid-row: 6/7;
+	}
+
 	</style>
 
 </head>
@@ -67,7 +124,7 @@
 
 	<div class="container">
 
-		<nav class="navbar navbar">
+		<nav class="navigation">
 
 				<a href="TeeInTheSunHome.html">HOME</a>
 				<a href="TeeInTheSunProperty.html">PROPERTY</a>
@@ -77,12 +134,12 @@
 
 		</nav>
 
-			<div class="titleCentered">TEE IN THE SUN</div>
-			<img id = "landingimage" src = assets/homepage.jpg alt = "homepage image" width="100%">
-			<div class="homepageText">Two Bedroom Townhouse with West facing terraces on the popular Polaris World La Torre Golf Resort. This townhouse is situated only a short walk from the resort facilities, restaurants, bars and supermarket.<br><br>Click on the 'Property' tab to find out more!</div>
+			<div class="header">TEE IN THE SUN</div>
+			<img class="landingimage" src = assets/homepage.jpg alt = "homepage image" width="100%">
+			<div class="homepageText">Two Bedroom Townhouse with West facing terraces on the popular Polaris World La Torre Golf Resort. This townhouse is situated only a short walk from the resort facilities, restaurants, bars and supermarket.<br>Click on the 'Property' tab to find out more!</div>
 
 	</div>
-
+	
 </body>
 
 		<footer class="footer">Charlotte Skinner - Copyright 2018.</footer>
