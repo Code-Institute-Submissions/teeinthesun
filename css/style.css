@@ -17,7 +17,11 @@
 
 .propertyInfo{
 
-	padding-right: 10px;
-	font-size: 15px;
+	padding-right: 20px;
+	text-align: justify;
+}
+
+.resortInfo{
+
 	text-align: justify;
 }

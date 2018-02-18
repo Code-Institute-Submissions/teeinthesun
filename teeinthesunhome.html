@@ -28,14 +28,14 @@
 
 		position: relative;
     	font-family: Poiret One;
-    	font-size: 60px;
+    	font-size: 55px;
     	text-align: center;
     	padding: 20px 30px 20px 30px;
 	}
 
 	nav{
 
-			margin: 30px auto 10px auto;
+			margin: 10px auto 10px auto;
 			width: 100%;
 			display: flex; /*set as a flex container*/
 			flex-direction: column; /*mobile first approach*/
@@ -50,18 +50,18 @@
 			font-family: Poiret One;
 			padding:10px 20px 0px 20px;
 			text-align: center;
-			font-size: 30px;
+			font-size: 25px;
 			
 	}
 
 	
 	/* --- For Desktop --- */
 
-	@media screen and (min-width: 700px){
+	@media screen and (min-width: 800px){
 
 	nav{
 
-			width: 90%;
+			width: 100%;
 			flex-flow: row;/* across screen for desktop screen size*/
 			align-items:baseline;
 			
@@ -79,20 +79,22 @@
 
 		padding-top: 20px; 
 		display: grid;
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-rows: repeat (6, auto);
 		
-	} 
+	}
 
 	.navigation{
 
 		grid-row: 1/2;
+		grid-column: 1/5;
 		
 	}
 
 	.header{
 
 		grid-row: 2/3;
+		grid-column: 1/5;
 		position: relative;
     	font-family: Poiret One;
     	font-size: 70px;
@@ -100,20 +102,18 @@
     	padding: 20px 30px 20px 30px;
 	}
 
-	.landingImage{
+	#landingImage{
 
 		grid-row: 3/5;
+		grid-column: 1/5;
+		width: 100%;
 
 	}
 
 	.homepageText{
 
 		grid-row: 5/6;
-	}
-
-	.footer{
-
-		grid-row: 6/7;
+		grid-column: 1/5;
 	}
 
 	</style>
@@ -135,7 +135,7 @@
 		</nav>
 
 			<div class="header">TEE IN THE SUN</div>
-			<img class="landingimage" src = assets/homepage.jpg alt = "homepage image" width="100%">
+			<img id="landingImage" src = assets/homepage.jpg alt = "homepage image" width="100%">
 			<div class="homepageText">Two Bedroom Townhouse with West facing terraces on the popular Polaris World La Torre Golf Resort. This townhouse is situated only a short walk from the resort facilities, restaurants, bars and supermarket.<br>Click on the 'Property' tab to find out more!</div>
 
 	</div>
