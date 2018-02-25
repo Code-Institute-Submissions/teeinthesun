@@ -9,7 +9,6 @@
 	<title>BOOKING - TEE IN THE SUN</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Poiret+One|Dosis" rel="stylesheet"> 
@@ -20,23 +19,8 @@
 
 
 
-	/*--- Navigation bar (for mobile) ---*/
+	/*--- Mobile --- */
 	
-	.container{
-
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-row-gap: 10px;
-	}
-
-	.header{
-
-		position: relative;
-    	font-family: Poiret One;
-    	font-size: 60px;
-    	text-align: center;
-    	padding: 20px 30px 20px 30px;
-	}
 
 	.bookingText{
 
@@ -55,7 +39,7 @@
 	    box-sizing: border-box;
 	}
 
-	input[type=submit]{
+	.btn{
 
 		width: 100%;
 		background-color: #93af36;
@@ -66,27 +50,7 @@
 	    border-radius: 4px;
 	    box-sizing: border-box;
 	    cursor: pointer;
-	}
-
-	nav{
-
-			margin: 10px auto 10px auto;
-			width: 100%;
-			display: flex; /*set as a flex container*/
-			flex-direction: column; /*mobile first approach*/
-			align-items:stretch;
-			padding: 0px;
-
-		} 
-
-	a{
-			color: #387a0e;
-			flex:1;		/*equal width to links*/
-			font-family: Poiret One;
-			padding:10px 20px 0px 20px;
-			text-align: center;
-			font-size: 30px;
-			
+	    font-size: 15px;	    
 	}
 
 	.contact{
@@ -96,32 +60,15 @@
 		text-align: center;
 	}
 
-	h3{
-		font-family: arial;
-		font-size: 25px;
+	li{
+		list-style-type: none;
+	
 	}
 
-	
+
 	/* --- For Desktop --- */
 
 	@media only screen and (min-width: 800px){
-
-	nav{
-
-			width: 100%;
-			flex-flow: row;/* across screen for desktop screen size*/
-			align-items:baseline;
-			
-		}
-
-	a{
-
-			font-size: 25px;
-			border: none;
-			font-family: Poiret One;
-
-	}
-
 
 	.container{ 
 
@@ -159,31 +106,6 @@
 		padding-top: 30px;
 	}
 
-	input[type=text], [type=email], [type=date], [type=tel], select {
-
-	    width: 100%;
-	    padding: 12px 15px;
-	    margin: 8px 0;
-	    display: inline-block;
-	    border: 1px solid #ccc;
-	    border-radius: 4px;
-	    box-sizing: border-box;
-	}
-
-	input[type=submit]{
-
-		width: 100%;
-		background-color: #93af36;
-		padding: 12px 20px;
-	    margin: 8px 0;
-	    display: inline-block;
-	    border: 1px solid #ccc;
-	    border-radius: 4px;
-	    box-sizing: border-box;
-	    cursor: pointer;
-	    font-size: 15px;
-	}
-
 	.contact{
 
 		grid-row: 3/4;
@@ -192,9 +114,6 @@
 		padding-top: 10px;
 	}
 
-	li{
-		list-style-type: none;
-	}
 }
 
 	</style>
@@ -238,9 +157,11 @@
 					<input type="date" name="departure"><br>
 
 					<label for="extras" class="extras">Extras:</label>
-					<input type="text" name="extras" placeholder="Please enter details of extra services you require as detailed on the Pricing page">
+					<input type="text" name="extras" placeholder="Please enter details of extra amenities you require">
 
-					<input type="submit" name="submit" value="Send Enquiry">
+					<button type="submit" class="btn">Send Enquiry 
+						<i class="fa fa-paper-plane-o" aria-hidden="true"></i>					
+					</button>
 				</fieldset>		
 		</form>
 
@@ -250,7 +171,7 @@
 			<ul>
          		<li><i class="fa fa-envelope fa-2x"><a href="mailto:#" title="Contact us">info@teeinthesun.com</a></i></li><br>
            		<li><i class="fa fa-phone fa-2x"><a href="#" title="Call us">+44 (0)1234567890</a></i></li>	
-         	</ul>
+         	</ul><br>
 			<img src="assets/map.jpg" alt="map" width="100%">
 		</div>
 	
