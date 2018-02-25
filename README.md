@@ -14,6 +14,7 @@ The purpose of this website is to advertise a holiday townhouse for rental on a 
 The technologies that I have used to build this site are:
  - HTML5
  - CSS3
+ - CSS Grid
  - Bootstrap
  - JQuery
  - Javascript
