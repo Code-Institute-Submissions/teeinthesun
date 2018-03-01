@@ -45,6 +45,13 @@ $(document).ready(function(){ // Run this code when DOM is ready });
 		        modalImg.src = this.src;
 		    }
 
+		    var img = document.getElementById('map');
+		    var modalImg = document.getElementById("modal-img01");
+		    img.onclick = function(){
+		        modal.style.display = "block";
+		        modalImg.src = this.src;
+		    }
+
 		    // Get the <span> element that closes the modal
 		    var span = document.getElementsByClassName("close")[0];
 
