@@ -26,8 +26,6 @@
 	  text-align: center;
 	}
 
-
-
 	a{
 		color: #387a0e;
 		flex:1;		/*equal width to links*/
@@ -37,7 +35,6 @@
 		font-size: 25px;
 			
 	}
-
 
 	a.social-media:hover{
 
@@ -50,62 +47,6 @@
 		margin-right: auto;
 		cursor: pointer;
     	transition: 0.3s;
-	}
-
-	/* Modal pop-up image */
-
-	.modal {
-	    display: none; /* Does not show until clicked */
-	    position: fixed;
-	    z-index: 1; 
-	    padding-top: 80px;
-	    width: 100%; /* Covers whole page */
-	    height: 100%;
-	    background-color: rgba(0,0,0,0.8); /* 0.8 - opacity */
-	}
-
-	/* Modal Content (image) */
-	.modal-content {
-	    margin: auto;
-	    display: block;
-	    width: 80%;
-	    max-width: 800px;
-	}
-
-	/* Add Animation */
-	.modal-content, #caption {    
-	    -webkit-animation-name: zoom;
-	    -webkit-animation-duration: 0.5s;
-	    animation-name: zoom;
-	    animation-duration: 0.5s;
-	}
-
-	@-webkit-keyframes zoom {
-	    from {-webkit-transform:scale(0)} 
-	    to {-webkit-transform:scale(1)}
-	}
-
-	@keyframes zoom {
-	    from {transform:scale(0)} 
-	    to {transform:scale(1)}
-	}
-	
-	/* The Close Button */
-	.close {
-	    position: absolute;
-	    top: 15px;
-	    right: 35px;
-	    color: #f1f1f1;
-	    font-size: 40px;
-	    font-weight: bold;
-	    transition: 0.3s;
-	}
-
-	.close:hover,
-	.close:focus {
-	    color: #bbb;
-	    text-decoration: none;
-	    cursor: pointer;
 	}
 
 	.footer{
@@ -124,9 +65,9 @@
 
 	a{
 
-			font-size: 25px;
-			border: none;
-			font-family: Poiret One;
+		font-size: 25px;
+		border: none;
+		font-family: Poiret One;
 			
 	}
 

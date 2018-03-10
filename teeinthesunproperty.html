@@ -9,11 +9,9 @@
 	<title>PROPERTY - TEE IN THE SUN</title>
 	<link rel="icon" type="image/jpg" href="assets/favicon.jpg">
 	<link href="https://fonts.googleapis.com/css?family=Poiret+One|Dosis" rel="stylesheet"> 
-	<link rel="stylesheet" type="text/css" href="css/style.css">	
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
-	<script type="text/javascript" src="js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="bower_components\lightbox2\dist\css\lightbox.css" rel="stylesheet">
 	<style type="text/css">
 
 
@@ -141,25 +139,23 @@
 				<strong>Available Extras</strong><br>Baby cot, Full welcome pack, Champagne & flowers on arrival.
 				</div>
 
-		
-
-				<img class="property" id="propertyImage1" src="assets/livingroom.jpg" alt="Living room" width="95%">
-				<img class="property" id="propertyImage2" src="assets/balcony.jpg" alt="Balcony" width="95%">
-				<img class="property" id="propertyImage3" src="assets/bedroom.jpg" alt="Bedroom" width="95%">
-				<img class="property" id="propertyImage4" src="assets/outside_front.jpg" alt="Outside front of property" width="95%">
+				
+				<a id="propertyImage1" href="assets/livingroom.jpg" data-lightbox="livingroom" data-title="Living Room"><img src="assets/livingroom.jpg" alt="Living Room" width="100%"></a>
+				<a id="propertyImage2" href="assets/balcony.jpg" data-lightbox="balcony" data-title="Balcony overlooking olive fields"><img src="assets/balcony.jpg" alt="Balcony" width="100%"></a>
+				<a id="propertyImage3" href="assets/bedroom.jpg" data-lightbox="bedroom" data-title="Bedroom"><img src="assets/bedroom.jpg" alt="Bedroom" width="100%"></a>
+				<a id="propertyImage4" href="assets/outside_front.jpg" data-lightbox="outside_front" data-title="Front of the property"><img src="assets/outside_front.jpg" alt="Outside front of property" width="100%"></a>
 
 
 	</div>
-
-				<!-- The Modal -->
-			<div id="modal-box" class="modal">
-			  <span class="close">&times;</span>
-			  <img class="modal-content" id="modal-img01">
-			</div>
 
 
 </body>
 
 		<footer class="footer">Charlotte Skinner - Copyright 2018.</footer>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<script src="bower_components\lightbox2\dist\js\lightbox.js"></script>
 
 </html>
