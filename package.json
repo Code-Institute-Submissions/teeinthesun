@@ -1,0 +1,19 @@
+{
+  "name": "teeinthesun",
+  "version": "1.0.0",
+  "description": "The purpose of this website is to advertise a holiday townhouse for rental on a golf resort. I have created this website to demonstrate the skills I have obtained from Stream One of the Full Stack Web Developer course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlotteskinner90/teeinthesun.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/charlotteskinner90/teeinthesun/issues"
+  },
+  "homepage": "https://github.com/charlotteskinner90/teeinthesun#readme"
+}
