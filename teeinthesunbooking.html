@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang = "en">
+<html lang = "en" ng-app>
 
 <head>
 
@@ -36,6 +36,11 @@
 	    border: 1px solid #ccc;
 	    border-radius: 4px;
 	    box-sizing: border-box;
+	}
+
+	input.ng-invalid.ng-dirty{
+
+		border: 3px solid red;
 	}
 
 	.btn{
@@ -148,28 +153,45 @@
 		
 		<div class="bookingForm">
 
-			<form>
+			<form name="booking">
 				<strong>Please fill the booking form stating the dates you would like to stay. We will get back to you with confirmation as soon as possible.</strong><br><br>
-					<fieldset>
+
+					<div ng-cloak>					
 						<label for="name" class="field">Name:</label>
-						<input type="text" id="name" placeholder="Required field" name="name"/><br>
+						<input type="text" id="name" ng-model="user.name" placeholder="Required field" name="name"/>
+						<span ng-show="booking.name.$dirty && booking.name.$error.required">Required</span><br>
+					</div>
 
+					<div ng-cloak>
 						<label for="phone" class="phone">Phone:</label>
-						<input id="phone" name="phone" placeholder="Digits only" type="tel" pattern="[0-9]{11}" title="Please enter a valid telephone number (11 digits)" /><br>
+						<input id="phone" name="phone" ng-model="user.phone" placeholder="Digits only" type="tel" pattern="[0-9]{11}" />
+						<span ng-show="booking.phone.$invalid">Please enter a valid telephone number (11 digits)</span><br>
+					</div>
 
+					<div ng-cloak>
 						<label for="email" class="field">Email:</label>
-						<input id="email" name="email" placeholder="Enter email" type="email" title="Please enter a valid email address" /><br>
+						<input id="email" name="email" ng-model="user.email" placeholder="Enter email" type="email"/>
+						<span ng-show="booking.email.$invalid">Please enter a valid email address</span><br>
+					</div>
 
+					<div ng-cloak>
 						<label for="arrival" class="arrival">Arrival:</label>
-						<input type="date" name="arrival" title="Please enter an arrival date"><br>
+						<input type="date" name="arrival" ng-model="user.arrival" required title="Please enter an arrival date">
+						<span ng-show="booking.arrival.$dirty && booking.arrival.$error.required">Required</span>
+						<br>
+					</div>
 
+					<div ng-cloak>
 						<label for="departure" class="departure">Departure:</label>
-						<input type="date" name="departure" title="Please enter a departure date"><br>
+						<input type="date" name="departure" ng-model="user.departure" required title="Please enter a departure date">
+						<span ng-show="booking.departure.$dirty && booking.departure.$error.required">Required</span>
+						<br>
+					</div>
 
-						<button type="submit" class="btn">Send Enquiry 
-							<i class="fa fa-paper-plane-o" aria-hidden="true"></i>					
+						<button ng-disabled="booking.$invalid" type="submit" class="btn">Send Enquiry 
+							<i class="fa fa-paper-plane-o" aria-hidden="true"></i>	
 						</button>
-					</fieldset>		
+						
 			</form>
 
 		</div>
@@ -200,5 +222,6 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script src="bower_components\lightbox2\dist\js\lightbox.js"></script>
+	<script src="bower_components\angular\angular.min.js"></script>
 
 </html>
