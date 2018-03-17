@@ -13,12 +13,14 @@ The purpose of this website is to advertise a holiday townhouse for rental on a 
 ## Technology
 
 The technologies that I have used to build this site are:
- - HTML5
- - CSS3
- - CSS Grid
- - Bootstrap
- - JQuery
- - Javascript
+ - HTML5 for the structure of the website elements
+ - CSS3 for styling of the components
+ - CSS Grid for the layout of the website
+ - Bootstrap to give the website a responsive layout
+ - JQuery and Javascript to enable the lightbox feature on the images and to change the colour of buttons upon hovering
+ - AngularJS is used to manage page routing, we also use it to make calls to the REST API and build custom directives
+ - NPM is used to help manage some of the dependencies in the website
+ - Bower is used to manage the installation of libraries and frameworks
 
 ## Contributing
 
