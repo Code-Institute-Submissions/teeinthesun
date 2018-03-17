@@ -1,5 +1,7 @@
 $(document).ready(function(){ // Run this code when DOM is ready });
 
+	// Change colour of booking form submit button upon mouseenter, return to green when mouse leaves button //
+
     $(".btn").mouseenter(function(){
 
         $(".btn").css("background-color","#ffffff");
@@ -11,6 +13,10 @@ $(document).ready(function(){ // Run this code when DOM is ready });
         $(".btn").css("background-color","#93af36");
 
     });
+
+
+
+    // Lightbox pop-up images //
 
     lightbox.option({
       'resizeDuration': 300,
