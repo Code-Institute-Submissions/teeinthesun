@@ -29,7 +29,7 @@ I have carried out manual testing on the site to ensure that all the features ar
  - Each of the links in the navigation bar navigate to the page they are supposed to. 
  - The images that have the added lightbox functionality react as a pop-up when clicked and close when the 'X' button is clicked.
  - Social media links (icons) route to the necessary social media sites
- - AngularJS booking form: Each of the fields in this form are set to be 'required', meaning there are validation features that appear if these are not complete or completed with invalid input. The phone and email input fields appear with a red outline if the field is interacted with but the input is incorrect or left blank. A guidance note also appears under the input field if this is the case. The submit button is set to be disabled if any of the fields contain invalid values - in this case all the fields need to be completed correctly before the button is active. 
+ - AngularJS booking form: Each of the fields in this form are set to be 'required', meaning there are validation features that appear if these are not complete or completed with invalid input. The phone and email input fields appear with a red outline if the field is interacted with but the input is incorrect or left blank. A guidance note also appears under the input field if this is the case. The submit button is set to be disabled if any of the fields contain invalid values - in this case all the fields need to be completed correctly before the button is active. Once all fields are entered correctly and the submit button is clicked, an alert window will open at the top of the screen to indicate that the form has been submitted.
 
 
 ## Contributing

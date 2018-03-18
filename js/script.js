@@ -23,6 +23,11 @@ $(document).ready(function(){ // Run this code when DOM is ready });
       'wrapAround': true
     })
 
+    //Submit button//
+	$(".btn").click(function() {
+	  alert("Thank you for your enquiry, we will be in touch!");
+	});
+
 });
 
 
