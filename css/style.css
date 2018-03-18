@@ -1,4 +1,4 @@
-/*--- Mobile First ---*/
+/*--- Mobile First layout ---*/
 
 	.container{
 
@@ -58,7 +58,7 @@
 	}
 
 
-/* --- For Desktop --- */
+/* --- Settings and CSS grid layout for desktop --- */
 
 	@media screen and (min-width: 800px){
 
