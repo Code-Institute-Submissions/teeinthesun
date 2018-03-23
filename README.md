@@ -39,16 +39,4 @@ I have carried out manual testing on the site to ensure that all the features ar
 
 ## References
 
-I installed the bower compontents for the Image Lightbox feature from http://lokeshdhakar.com/projects/lightbox2/. I adapted a small part of the Javascript to make the lightbox image resize faster than the default value (changed 700ms to 300ms, see script.js line 16)
-
-In accordance with citation regulations these are the details of the creator of this feature:
-
- Lightbox v2.10.0
- by Lokesh Dhakar
-
- More info:
- http://lokeshdhakar.com/projects/lightbox2/
-
- Copyright 2007, 2018 Lokesh Dhakar
- Released under the MIT license
- https://github.com/lokesh/lightbox2/blob/master/LICENSE
+I followed the instructions from http://lokeshdhakar.com/projects/lightbox2/ to integrate the lightbox image functionality. I adapted a small part of the Javascript to make the lightbox image resize faster than the default value (changed 700ms to 300ms, see script.js line 16)
