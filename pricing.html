@@ -18,122 +18,104 @@
 <body>
 
 <!-- Bootstrap navigation bar -->
-	<div class="navbar navbar-inverse">
-		<div class="navbar">
-				<button class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-			<div class="collapse navbar-collapse" id="mynavbar">
-				<ul class="nav navbar-nav" >
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="property.html">PROPERTY</a></li>
-						<li><a href="resort.html">RESORT</a></li>
-						<li><a href="pricing.html">PRICING</a></li>
-						<li><a href="booking.html">BOOKING</a></li>
-				</ul>
+	<div class="navbar navbar-inverse" ng-include="'partials/navbar.html'"></div>
+		
+		<div class="container">
+		
+			<div class="header">PRICING</div>
+
+		<!-- Pricing tables -->
+			<div class="pricingTable">
+				<table>
+					<tr>
+						<th></th>
+						<th>Per Night</th>
+						<th>Per Week</th>
+					</tr>
+					<tr>
+						<td>1 Person</td>
+						<td>£50</td>
+						<td>£350</td>
+					</tr>
+					<tr>
+						<td>2 People</td>
+						<td>£100</td>
+						<td>£700</td>
+					</tr>
+					<tr>
+						<td>3 People</td>
+						<td>£150</td>
+						<td>£1,050</td>
+					</tr>
+					<tr>
+						<td>4 People</td>
+						<td>£200</td>
+						<td>£1,400</td>
+					</tr>
+				</table>
 			</div>
-		</div>	
-	</div>
 
-	<div class="container">
-	
-		<div class="header">PRICING</div>
+			<div class="seasonal">
 
-	<!-- Pricing tables -->
-		<div class="pricingTable">
-			<table>
-				<tr>
-					<th></th>
-					<th>Per Night</th>
-					<th>Per Week</th>
-				</tr>
-				<tr>
-					<td>1 Person</td>
-					<td>£50</td>
-					<td>£350</td>
-				</tr>
-				<tr>
-					<td>2 People</td>
-					<td>£100</td>
-					<td>£700</td>
-				</tr>
-				<tr>
-					<td>3 People</td>
-					<td>£150</td>
-					<td>£1,050</td>
-				</tr>
-				<tr>
-					<td>4 People</td>
-					<td>£200</td>
-					<td>£1,400</td>
-				</tr>
-			</table>
-		</div>
+				<table>
+					<tr>
+						<th>Seasonal Variances</th>
+					</tr>
+					<tr>
+						<td>19th Dec - 3rd Jan // Christmas // +20%</td>
+					</tr>
+					<tr>
+						<td>15th Feb - 25th Feb // Half Term // +15%</td>
+					</tr>
+					<tr>
+						<td>4th Apr - 21 Apr // Easter // +15%</td>
+					</tr>
+					<tr>
+						<td>23rd May - 2nd Jun // Half Term // +15%</td>
+					</tr>
+					<tr>
+						<td>21 Jul - 5th Sept  // Summer // +20%</td>
+					</tr>
+					<tr>
+						<td>24th Oct - 3rd Nov // Half Term // +15%</td>
+					</tr>
+				</table>
 
-		<div class="seasonal">
+			</div>
 
-			<table>
-				<tr>
-					<th>Seasonal Variances</th>
-				</tr>
-				<tr>
-					<td>19th Dec - 3rd Jan // Christmas // +20%</td>
-				</tr>
-				<tr>
-					<td>15th Feb - 25th Feb // Half Term // +15%</td>
-				</tr>
-				<tr>
-					<td>4th Apr - 21 Apr // Easter // +15%</td>
-				</tr>
-				<tr>
-					<td>23rd May - 2nd Jun // Half Term // +15%</td>
-				</tr>
-				<tr>
-					<td>21 Jul - 5th Sept  // Summer // +20%</td>
-				</tr>
-				<tr>
-					<td>24th Oct - 3rd Nov // Half Term // +15%</td>
-				</tr>
-			</table>
+			<div class="extras">
 
-		</div>
+				<table>
+					<tr>
+						<th>Extras</th>
+					</tr>
+					<tr>
+						<td>Champagne & Flowers // £45</td>
+					</tr>
+					<tr>
+						<td>Baby cot // £3 per day</td>
+					</tr>
+					<tr>
+						<td>Welcome pack // £25</td>
+					</tr>
+					<tr>
+						<td>Airport pickup // £30</td>
+					</tr>
+					<tr>
+						<td>Cleaning, Check-in // £65</td>
+					</tr>
+				</table>
 
-		<div class="extras">
-
-			<table>
-				<tr>
-					<th>Extras</th>
-				</tr>
-				<tr>
-					<td>Champagne & Flowers // £45</td>
-				</tr>
-				<tr>
-					<td>Baby cot // £3 per day</td>
-				</tr>
-				<tr>
-					<td>Welcome pack // £25</td>
-				</tr>
-				<tr>
-					<td>Airport pickup // £30</td>
-				</tr>
-				<tr>
-					<td>Cleaning, Check-in // £65</td>
-				</tr>
-			</table>
-
-		</div>
+			</div>
 
 		<!-- Lightbox images -->
 
 			<a id="resortImage5" href="assets/golf.jpg" data-lightbox="Golf" data-title="Golf courses"><img src="assets/golf.jpg" alt="golf" width="100%"></a>
 			<a id="resortImage6" href="assets/clubhouse.jpg" data-lightbox="Clubhouse" data-title="Clubhouse on the La Torre Golf Resort"><img src="assets/clubhouse.jpg" alt="clubhouse" width="100%"></a>
 
-	</div>
+		</div>
 
 			<div class="footer" ng-include="'partials/footer.html'"></div>
-
 </body>
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

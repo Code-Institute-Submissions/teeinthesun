@@ -18,41 +18,24 @@
 <body>
 
 <!-- Bootstrap navigation bar -->
-	<div class="navbar navbar-inverse">
-			<div class="navbar">
-					<button class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				<div class="collapse navbar-collapse" id="mynavbar">
-					<ul class="nav navbar-nav" >
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="property.html">PROPERTY</a></li>
-						<li><a href="resort.html">RESORT</a></li>
-						<li><a href="pricing.html">PRICING</a></li>
-						<li><a href="booking.html">BOOKING</a></li>
-					</ul>
-				</div>
-			</div>	
-	</div>
+	<div class="navbar navbar-inverse" ng-include="'partials/navbar.html'"></div>
 
-	<div class="container">
-	
-		<div class="header">THE TOWNHOUSE</div>
+		<div class="container">
+		
+			<div class="header">THE TOWNHOUSE</div>
 
-			<div class="propertyInfo"><strong>Property Features</strong><br>Living room, fitted kitchen, two bedrooms (one on the ground floor) with wardrobes and two bathrooms. The townhouse is fully equipped for family holidays with a TV, DVD player, and music system. Situated only a short walk from the resort facilities, restaurants, bars and supermarket. Benefits from West facing terraces on the ground and first floor, with views across the olive fields.<br><br><strong>Amenities</strong><br>Heating System, Towels/Bed linen, Refrigerator, Air conditioning in living area and bedrooms, Communal swimming pool, Balcony, Fitted kitchen, Washing machine, DVD player, Television, Music system, Sun loungers, Digital TV, Terrace. No pets, No smoking.<br><br><strong>Available Extras</strong><br>Baby cot, Full welcome pack, Champagne & flowers on arrival.</div>
+				<div class="propertyInfo"><strong>Property Features</strong><br>Living room, fitted kitchen, two bedrooms (one on the ground floor) with wardrobes and two bathrooms. The townhouse is fully equipped for family holidays with a TV, DVD player, and music system. Situated only a short walk from the resort facilities, restaurants, bars and supermarket. Benefits from West facing terraces on the ground and first floor, with views across the olive fields.<br><br><strong>Amenities</strong><br>Heating System, Towels/Bed linen, Refrigerator, Air conditioning in living area and bedrooms, Communal swimming pool, Balcony, Fitted kitchen, Washing machine, DVD player, Television, Music system, Sun loungers, Digital TV, Terrace. No pets, No smoking.<br><br><strong>Available Extras</strong><br>Baby cot, Full welcome pack, Champagne & flowers on arrival.</div>
 
-			<!-- Lightbox images -->
-				
-				<a id="propertyImage1" href="assets/livingroom.jpg" data-lightbox="livingroom" data-title="Living Room"><img src="assets/livingroom.jpg" alt="Living Room" width="100%"></a>
-				<a id="propertyImage2" href="assets/balcony.jpg" data-lightbox="balcony" data-title="Balcony overlooking olive fields"><img src="assets/balcony.jpg" alt="Balcony" width="100%"></a>
-				<a id="propertyImage3" href="assets/bedroom.jpg" data-lightbox="bedroom" data-title="Bedroom"><img src="assets/bedroom.jpg" alt="Bedroom" width="100%"></a>
-				<a id="propertyImage4" href="assets/outside_front.jpg" data-lightbox="outside_front" data-title="Front of the property"><img src="assets/outside_front.jpg" alt="Outside front of property" width="100%"></a>
+				<!-- Lightbox images -->
+					
+					<a id="propertyImage1" href="assets/livingroom.jpg" data-lightbox="livingroom" data-title="Living Room"><img src="assets/livingroom.jpg" alt="Living Room" width="100%"></a>
+					<a id="propertyImage2" href="assets/balcony.jpg" data-lightbox="balcony" data-title="Balcony overlooking olive fields"><img src="assets/balcony.jpg" alt="Balcony" width="100%"></a>
+					<a id="propertyImage3" href="assets/bedroom.jpg" data-lightbox="bedroom" data-title="Bedroom"><img src="assets/bedroom.jpg" alt="Bedroom" width="100%"></a>
+					<a id="propertyImage4" href="assets/outside_front.jpg" data-lightbox="outside_front" data-title="Front of the property"><img src="assets/outside_front.jpg" alt="Outside front of property" width="100%"></a>
 
-	</div>
+		</div>
 
-		<div class="footer" ng-include="'partials/footer.html'"></div>
+	<div class="footer" ng-include="'partials/footer.html'"></div>
 
 </body>
 
@@ -61,6 +44,5 @@
 	<script type="text/javascript" src="js/script.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
-
 
 </html>

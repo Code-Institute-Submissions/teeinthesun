@@ -18,34 +18,17 @@
 <body>
 
 <!-- Bootstrap navigation bar -->
-	<div class="navbar navbar-inverse"> 
-			<div class="navbar">
-					<button class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				<div class="collapse navbar-collapse" id="mynavbar">
-					<ul class="nav navbar-nav" >
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="property.html">PROPERTY</a></li>
-						<li><a href="resort.html">RESORT</a></li>
-						<li><a href="pricing.html">PRICING</a></li>
-						<li><a href="booking.html">BOOKING</a></li>
-					</ul>
-				</div>
-			</div>	
-	</div>
+	<div class="navbar navbar-inverse" ng-include="'partials/navbar.html'"></div>
 
-	<div class="container">
+		<div class="container">
 
-			<div class="header">TEE IN THE SUN</div>
+				<div class="header">TEE IN THE SUN</div>
 
-			<a id="landingImage" href="assets/homepage.jpg" data-lightbox="homepage"><img src = assets/homepage.jpg alt = "homepage image" width="100%"></a>
-			
-			<div class="homepageText">Two Bedroom Townhouse with West facing terraces on the popular Polaris World La Torre Golf Resort. This townhouse is situated only a short walk from the resort facilities, restaurants, bars and supermarket.<br>Click on the 'Property' tab to find out more!</div>
+				<a id="landingImage" href="assets/homepage.jpg" data-lightbox="homepage"><img src = assets/homepage.jpg alt = "homepage image" width="100%"></a>
+				
+				<div class="homepageText">Two Bedroom Townhouse with West facing terraces on the popular Polaris World La Torre Golf Resort. This townhouse is situated only a short walk from the resort facilities, restaurants, bars and supermarket.<br>Click on the 'Property' tab to find out more!</div>
 
-	</div>
+		</div>
 
 	<div class="footer" ng-include="'partials/footer.html'"></div>
 	
