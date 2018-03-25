@@ -44,50 +44,7 @@
 
 	<!-- AngularJS Booking form -->
 		
-		<div class="bookingForm">
-
-			<form name="booking" ng-submit="submitForm()" novalidate>
-				<strong>Please fill the booking form stating the dates you would like to stay. We will get back to you with confirmation as soon as possible.</strong><br><br>
-
-					<div ng-cloak>					
-						<label for="name" class="field">Name:</label>
-						<input type="text" id="name" ng-model="user.name" placeholder="Required field" autocomplete="name" name="name"/>
-						<span ng-show="booking.name.$dirty && booking.name.$error.required">Required</span><br>
-					</div>
-
-					<div ng-cloak>
-						<label for="phone" class="phone">Phone:</label>
-						<input id="phone" name="phone" ng-model="user.phone" placeholder="Digits only" autocomplete="tel-national" type="tel" pattern="[0-9]{11}" />
-						<span ng-show="booking.phone.$invalid">Please enter a valid telephone number (11 digits)</span><br>
-					</div>
-
-					<div ng-cloak>
-						<label for="email" class="field">Email:</label>
-						<input id="email" name="email" ng-model="user.email" placeholder="Enter email" autocomplete="email" type="email"/>
-						<span ng-show="booking.email.$invalid">Please enter a valid email address</span><br>
-					</div>
-
-					<div ng-cloak>
-						<label for="arrival" class="arrival">Arrival:</label>
-						<input type="date" name="arrival" ng-model="user.arrival" required title="Please enter an arrival date">
-						<span ng-show="booking.arrival.$dirty && booking.arrival.$error.required">Required</span>
-						<br>
-					</div>
-
-					<div ng-cloak>
-						<label for="departure" class="departure">Departure:</label>
-						<input type="date" name="departure" ng-model="user.departure" required title="Please enter a departure date">
-						<span ng-show="booking.departure.$dirty && booking.departure.$error.required">Required</span>
-						<br>
-					</div>
-
-						<button ng-disabled="booking.$invalid" type="submit" class="btn">Send Enquiry 
-							<i class="fa fa-paper-plane-o" aria-hidden="true"></i>	
-						</button>
-						
-			</form>
-
-		</div>
+		<div class="bookingForm" ng-include="'partials/form.html'"></div>
 
 		<div class="contact">
 			<h2>CONTACT US</h2>
