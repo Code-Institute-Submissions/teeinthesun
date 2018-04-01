@@ -1,39 +1,22 @@
-<form name="booking" ng-submit="submitForm()" novalidate>
+<form name="booking" action="#" onsubmit="alert('Thank you for your enquiry, we will be in touch!')">
 	<strong>Please fill the booking form stating the dates you would like to stay. We will get back to you with confirmation as soon as possible.</strong><br><br>
 
-		<div ng-cloak>					
 			<label for="name" class="field">Name:</label>
-			<input type="text" id="name" ng-model="user.name" placeholder="Required field" autocomplete="name" name="name"/>
-			<span ng-show="booking.name.$dirty && booking.name.$error.required">Required</span><br>
-		</div>
+			<input type="text" placeholder="Required field" required autocomplete="name" name="Name"/><br>
 
-		<div ng-cloak>
 			<label for="phone" class="phone">Phone:</label>
-			<input id="phone" name="phone" ng-model="user.phone" placeholder="Digits only" autocomplete="tel-national" type="tel" pattern="[0-9]{11}" />
-			<span ng-show="booking.phone.$invalid">Please enter a valid telephone number (11 digits)</span><br>
-		</div>
+			<input id="phone" name="phone" placeholder="Please enter a valid telephone number (11 digits)" required autocomplete="tel-national" type="tel" pattern="[0-9]{11}" />
 
-		<div ng-cloak>
 			<label for="email" class="field">Email:</label>
-			<input id="email" name="email" ng-model="user.email" placeholder="Enter email" autocomplete="email" type="email"/>
-			<span ng-show="booking.email.$invalid">Please enter a valid email address</span><br>
-		</div>
+			<input id="email" name="email" placeholder="Enter email" required autocomplete="email" type="email"/>
 
-		<div ng-cloak>
 			<label for="arrival" class="arrival">Arrival:</label>
-			<input type="date" name="arrival" ng-model="user.arrival" required title="Please enter an arrival date">
-			<span ng-show="booking.arrival.$dirty && booking.arrival.$error.required">Required</span><br>
-		</div>
-
-		<div ng-cloak>
+			<input type="text"  class="form-control" id="start-date" name="start-date" required placeholder="MM/DD/YYYY">
+			
 			<label for="departure" class="departure">Departure:</label>
-			<input type="date" name="departure" ng-model="user.departure" required title="Please enter a departure date">
-			<span ng-show="booking.departure.$dirty && booking.departure.$error.required">Required</span><br>
-		</div>
-
-		<button ng-disabled="booking.$invalid" type="submit" class="btn">Send Enquiry 
+			<input type="text" class="form-control" id="end-date" name="end-date" required placeholder="MM/DD/YYYY" >
+		
+		<button type="submit" id="btn-submit">Send Enquiry 
 			<i class="fa fa-paper-plane-o" aria-hidden="true"></i>	
 		</button>						
 </form>
-
-	<script type="text/javascript" src="js/script.js"></script>

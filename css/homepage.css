@@ -1,0 +1,20 @@
+/* --- Homepage --- */
+ .homepageText{
+     position: relative;
+     margin-left: auto;
+     padding-top: 20px;
+     font-family: Poiret One;
+     font-size: 20px;
+     text-align: center;
+}
+ @media screen and (min-width: 800px){
+     #landingImage{
+         grid-row: 3/5;
+         grid-column: 1/5;
+         width: 100%;
+    }
+     .homepageText{
+         grid-row: 5/6;
+         grid-column: 1/5;
+    }
+}
