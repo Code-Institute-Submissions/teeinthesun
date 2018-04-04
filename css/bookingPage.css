@@ -13,7 +13,7 @@
      box-sizing: border-box;
      height: 40px;
 }
- #btn-submit{
+ .btn{
      width: 100%;
      background-color: #93af36;
      padding: 12px 20px;
