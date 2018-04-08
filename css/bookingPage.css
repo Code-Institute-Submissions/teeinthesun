@@ -24,6 +24,10 @@
      box-sizing: border-box;
      cursor: pointer;
      font-size: 15px;
+     transition: background-color 0.3s;
+}
+ .btn:hover {
+    background-color: #ffffff;
 }
  .contact{
      font-family: poiret one;
