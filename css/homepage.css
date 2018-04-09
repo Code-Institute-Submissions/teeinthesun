@@ -12,7 +12,12 @@
          grid-row: 3/5;
          grid-column: 1/5;
          width: 100%;
+         transition: none;
+         cursor: default; 
     }
+     #landingImage:hover{
+     	opacity: 1;
+     }
      .homepageText{
          grid-row: 5/6;
          grid-column: 1/5;
