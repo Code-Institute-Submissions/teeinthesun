@@ -11,11 +11,40 @@
 			<input id="email" name="email" placeholder="Enter email" required autocomplete="email" type="email"/>
 
 			<label for="arrival" class="arrival">Arrival:</label>
-			<input type="text"  class="form-control" id="start-date" name="start-date" required placeholder="MM/DD/YYYY">
+			<input type="text" class="form-control" id="start-date" name="start-date" placeholder="MM/DD/YYYY" required>
 			
-			<label for="departure" class="departure">Departure:</label>
-			<input type="text" class="form-control" id="end-date" name="end-date" required placeholder="MM/DD/YYYY" >
-		
+			<label for="days" class="days">Nights (Please call for longer than 14 nights):</label>
+			<select class="selectpicker price calculate" name="price" id="price" data-rule-required="true" required>
+				<option value=""> </option>
+				<option value="50">1</option>
+				<option value="100">2</option>
+				<option value="150">3</option>
+				<option value="200">4</option>
+				<option value="250">5</option>
+				<option value="300">6</option>
+				<option value="350">7</option>
+				<option value="400">8</option>
+				<option value="450">9</option>
+				<option value="500">10</option>
+				<option value="550">11</option>
+				<option value="600">12</option>
+				<option value="650">13</option>
+				<option value="700">14</option>
+			</select>
+
+			<label for="party" class="party">Guests:</label>
+			<select  class="selectpicker group calculate" name="group" id="group" data-rule-required="true" required>
+				<option value=""></option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</select>
+
+			<label for="totalPrice" class="totalPrice">Total Price:</label>
+			<input name="totalPrice" id="totalPrice" disabled="true" data="" />
+
+			
 		<button type="submit" class="btn">Send Enquiry 
 			<i class="fa fa-paper-plane-o" aria-hidden="true"></i>	
 		</button>						

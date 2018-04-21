@@ -1,5 +1,5 @@
-    /* Date Picker - set so that arrival date cannot be in the past, 
-    and once arrival date chosen the departure date must be the same day or after */
+/* Date Picker - set so that arrival date cannot be in the past, 
+   and once arrival date chosen the departure date must be the same day or after */
 
     $(document).ready(function() {
         $(function() {
@@ -21,8 +21,27 @@
 
     });
 
-    //Submit button
+// End of datepicker code
+
+// Price Calculator - Found solution on StackOverflow, altered code to suit project
+
+$(document).ready(function () {
+    $('.calculate').change(function () {
+        if (Number($('.selectpicker.group').val()) && Number($('.selectpicker.price').val())) {
+            var total = Number($('.selectpicker.group').val()) * Number($('.selectpicker.price').val());
+            $('#totalPrice').val('£' + total);
+        } else {
+            return;
+        }
+    });
+});
+
+// End of Price Calculator code
+
+//Submit button
 
     function alertFunction() {
         alert("Thank you for your enquiry, we will be in touch!");
     }
+
+//End of submit button code
