@@ -1,78 +1,95 @@
 <!DOCTYPE html>
 
-<html lang = "en" ng-app="">
+<html lang = "en">
 
-<head>
+	<head>
 
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>PRICING - TEE IN THE SUN</title>
-	<link rel="icon" type="image/jpg" href="assets/favicon.jpg">
-	<link href="https://fonts.googleapis.com/css?family=Poiret+One|Dosis" rel="stylesheet"> 
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
-	<link rel="stylesheet" type="text/css" href="css/style.css">	
-	<link rel="stylesheet" type="text/css" href="css/pricingPage.css">	
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.css" rel="stylesheet">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<title>PRICING - TEE IN THE SUN</title>
+		<link rel="icon" type="image/jpg" href="assets/favicon.jpg">
+		<link href="https://fonts.googleapis.com/css?family=Poiret+One|Dosis" rel="stylesheet"> 
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css">	
+		<link rel="stylesheet" type="text/css" href="css/pricingPage.css">	
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.css" rel="stylesheet">
 
-</head>
+	</head>
 
-<body>
+	<body>
 
-<!-- Bootstrap navigation bar -->
-	<nav class="navbar navbar-inverse" ng-include="'partials/navbar.html'"></nav>
-		
-		<div class="container">
-		
-			<header>PRICING</header>
+	<!-- Bootstrap navigation bar -->
+		<nav class="navbar navbar-inverse">
+			<nav class="navbar">
+				<button class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<nav class="collapse navbar-collapse" id="mynavbar">
+					<ul class="nav navbar-nav" >
+						<li><a class="navbar-style" href="index.html">HOME</a></li>
+						<li><a class="navbar-style" href="property.html">PROPERTY</a></li>
+						<li><a class="navbar-style" href="resort.html">RESORT</a></li>
+						<li><a class="navbar-style" href="pricing.html">PRICING</a></li>
+						<li><a class="navbar-style" href="booking.html">BOOKING</a></li>
+					</ul>
+				</nav>
+			</nav>	
+		</nav>
+			
+			<div class="container">
+			
+				<header>PRICING</header>
 
-		<!-- Pricing tables -->
-			<div class="pricingTable">
-				<table>
-					<tr>
-						<th></th>
-						<th>Per Night</th>
-						<th>Per Week</th>
-					</tr>
-					<tr>
-						<td>1 Adult</td>
-						<td>£50</td>
-						<td>£350</td>
-					</tr>
-					<tr>
-						<td>2 Adults</td>
-						<td>£100</td>
-						<td>£700</td>
-					</tr>
-					<tr>
-						<td>3 Adults</td>
-						<td>£150</td>
-						<td>£1,050</td>
-					</tr>
-					<tr>
-						<td>4 Adults</td>
-						<td>£200</td>
-						<td>£1,400</td>
-					</tr>
-				</table>
+			<!-- Pricing tables -->
+				<div class="pricingTable">
+					<table>
+						<tr>
+							<th></th>
+							<th>Per Night</th>
+							<th>Per Week</th>
+						</tr>
+						<tr>
+							<td>1 Adult</td>
+							<td>£50</td>
+							<td>£350</td>
+						</tr>
+						<tr>
+							<td>2 Adults</td>
+							<td>£100</td>
+							<td>£700</td>
+						</tr>
+						<tr>
+							<td>3 Adults</td>
+							<td>£150</td>
+							<td>£1,050</td>
+						</tr>
+						<tr>
+							<td>4 Adults</td>
+							<td>£200</td>
+							<td>£1,400</td>
+						</tr>
+					</table>
+				</div>
+
+					<!-- Lightbox images -->
+
+						<a id="resortImage1" href="assets/pool.jpg" data-lightbox="resort" data-title="Swimming Pool"><img src="assets/pool.jpg" alt="pool" width="100%"></a>
+						<a id="resortImage2" href="assets/tennis.jpg" data-lightbox="resort" data-title="Tennis courts on the La Torre Golf Resort"><img src="assets/tennis.jpg" alt="tennis" width="100%"></a>
+						<a id="resortImage3" href="assets/golf.jpg" data-lightbox="resort" data-title="Golf courses"><img src="assets/golf.jpg" alt="golf" width="100%"></a>
+						<a id="resortImage4" href="assets/clubhouse.jpg" data-lightbox="resort" data-title="Clubhouse on the La Torre Golf Resort"><img src="assets/clubhouse.jpg" alt="clubhouse" width="100%"></a>
+
+
 			</div>
 
-				<!-- Lightbox images -->
+		<footer>Charlotte Skinner - Copyright 2018.</footer>
 
-					<a id="resortImage1" href="assets/pool.jpg" data-lightbox="resort" data-title="Swimming Pool"><img src="assets/pool.jpg" alt="pool" width="100%"></a>
-					<a id="resortImage2" href="assets/tennis.jpg" data-lightbox="resort" data-title="Tennis courts on the La Torre Golf Resort"><img src="assets/tennis.jpg" alt="tennis" width="100%"></a>
-					<a id="resortImage3" href="assets/golf.jpg" data-lightbox="resort" data-title="Golf courses"><img src="assets/golf.jpg" alt="golf" width="100%"></a>
-					<a id="resortImage4" href="assets/clubhouse.jpg" data-lightbox="resort" data-title="Clubhouse on the La Torre Golf Resort"><img src="assets/clubhouse.jpg" alt="clubhouse" width="100%"></a>
-
-
-		</div>
-
-	<footer ng-include="'partials/footer.html'"></footer>
-</body>
-
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/script.js?n=1"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.js"></script>
+		
+	</body>
 
 </html>

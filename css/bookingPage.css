@@ -65,6 +65,10 @@
  .form-control{
      background: url(https://www.solodev.com/assets/booking-form/icon_calendar.png) no-repeat scroll 98% center rgb(255, 255, 255);
 }
+ #googleMap{
+     border-radius: 15px;
+     padding-top: 10px;
+}
  @media screen and (min-width: 800px){
      .bookingForm{
          grid-row: 3/4;

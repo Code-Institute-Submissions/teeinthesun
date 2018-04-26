@@ -25,16 +25,13 @@
 
 // Price Calculator - Found solution on StackOverflow, altered code to suit project
 
-$(document).ready(function () {
-    $('.calculate').change(function () {
+    function calculatePrice() {
         if (Number($('.selectpicker.group').val()) && Number($('.selectpicker.price').val())) {
             var total = Number($('.selectpicker.group').val()) * Number($('.selectpicker.price').val());
             $('#totalPrice').val('£' + total);
-        } else {
-            return;
         }
-    });
-});
+    };
+
 
 // End of Price Calculator code
 
