@@ -14,7 +14,6 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<link rel="stylesheet" type="text/css" href="css/bookingPage.css">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.css" rel="stylesheet">
 
 	</head>
 
@@ -61,8 +60,8 @@
 				<label for="arrival" class="arrival">Arrival:</label>
 				<input type="text" class="form-control" id="start-date" name="start-date" placeholder="MM/DD/YYYY" required>
 				
-				<label for="days" class="days">Nights (Please call for longer than 14 nights):</label>
-				<select class="selectpicker price calculate" name="price" id="price" data-rule-required="true" onchange="calculatePrice()" required>
+				<label for="nights" class="nights">Nights (Please call for longer than 14 nights):</label>
+				<select name="price" id="nights" data-rule-required="true" onchange="calculatePrice()" required>
 					<option value=""> </option>
 					<option value="50">1</option>
 					<option value="100">2</option>
@@ -80,8 +79,8 @@
 					<option value="700">14</option>
 				</select>
 
-				<label for="party" class="party">Guests:</label>
-				<select  class="selectpicker group calculate" name="group" id="group" data-rule-required="true"  onchange="calculatePrice()" required>
+				<label for="people" class="people">Guests:</label>
+				<select name="group" id="people" data-rule-required="true"  onchange="calculatePrice()" required>
 					<option value=""></option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -121,12 +120,11 @@
 
 		<footer>Charlotte Skinner - Copyright 2018.</footer>
 
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.js"></script>
-		<script type="text/javascript" src="js/script.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-		<script type="text/javascript" src="js/form.js"></script>
+		<script src="js/script.js"></script>
+		<script src="js/form.js"></script>
 
 	</body>
 

@@ -4,7 +4,7 @@
     $(document).ready(function() {
         $(function() {
             var dateToday = new Date();
-            var dates = $("#start-date, #end-date").datepicker({
+            var dates = $("#start-date").datepicker({
                 defaultDate: "dateToday",
                 changeMonth: true,
                 numberOfMonths: 1,
@@ -21,19 +21,17 @@
 
     });
 
-// End of datepicker code
 
 // Price Calculator - Found solution on StackOverflow, altered code to suit project
 
     function calculatePrice() {
-        if (Number($('.selectpicker.group').val()) && Number($('.selectpicker.price').val())) {
-            var total = Number($('.selectpicker.group').val()) * Number($('.selectpicker.price').val());
+        if (Number($('#nights').val()) && Number($('#people').val())) {
+            var total = Number($('#nights').val()) * Number($('#people').val());
             $('#totalPrice').val('£' + total);
         }
     };
 
 
-// End of Price Calculator code
 
 //Submit button
 
@@ -41,4 +39,3 @@
         alert("Thank you for your enquiry, we will be in touch!");
     }
 
-//End of submit button code

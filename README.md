@@ -19,8 +19,7 @@ The technologies that I have used to build this site are:
  - CSS Grid for the flexible layout of the website
  - Bootstrap for the responsive navigation bar
  - JQuery and Javascript to enable the lightbox feature on the images and to change the colour of buttons/social media links upon hovering.
- - Javascript is also used to manage the alert box and datepicker on the booking form. The datepicker is set so that the minimum date that can be chosen for arrival is today and the departure date cannot be set to be before the arrival date.
- - Bower is used to manage the installation of libraries and frameworks
+ - Javascript is also used to manage the alert box and datepicker on the booking form, and is used to power the price calculator on the booking form.
 
 ## Testing
 
@@ -29,7 +28,7 @@ I have carried out manual testing on the site to ensure that all the features ar
  - Each of the links in the navigation bar navigate to the page they are supposed to. 
  - The images that have the added lightbox functionality react as a pop-up when clicked and close when the 'X' button is clicked.
  - Social media links (icons) route to the necessary social media sites
- - Booking form: Each of the fields in this form are set to be 'required', meaning there are validation features that appear if these are not complete or completed with invalid input. The phone and email input fields appear with a red outline if the input is incorrect or left blank. A guidance note also appears under the input field if this is the case. Once all fields are entered correctly and the submit button is clicked, an alert window will open at the top of the screen to indicate that the form has been submitted.
+ - Booking form: Each of the fields in this form are set to be 'required', meaning there are validation features that appear if these are not complete or completed with invalid input. The phone and email input fields appear with a red outline if the input is incorrect or left blank. A guidance note also appears under the input field if this is the case. Once all fields are entered correctly and the submit button is clicked, an alert window will open at the top of the screen to indicate that the form has been submitted. 
 
 ## Contributing
 
@@ -39,4 +38,4 @@ I have carried out manual testing on the site to ensure that all the features ar
 
 ## References
 
-I followed the instructions from http://lokeshdhakar.com/projects/lightbox2/ to integrate the lightbox image functionality. I adapted a small part of the Javascript to make the lightbox image resize faster than the default value (changed 700ms to 300ms, see script.js line 16)
+I followed the instructions from http://lokeshdhakar.com/projects/lightbox2/ to integrate the lightbox image functionality. I adapted a small part of the Javascript to make the lightbox image resize faster than the default value (changed 700ms to 100ms, see script.js line 6)
