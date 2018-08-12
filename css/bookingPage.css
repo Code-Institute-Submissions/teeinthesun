@@ -107,4 +107,9 @@
      a.social-media:hover{
          color: #387a0e;
     }
+    #googleMap{
+        border-radius: 15px;
+        padding-top: 10px;
+        max-width: 400px;
+   }
 }
