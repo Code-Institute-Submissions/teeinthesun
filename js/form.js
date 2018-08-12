@@ -36,6 +36,8 @@
 //Submit button
 
     function alertFunction() {
-        alert("Thank you for your enquiry, we will be in touch!");
-    }
+        $( "#thankyouModal" ).dialog({
+            modal:true
+        });
+  } 
 

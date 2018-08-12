@@ -28,10 +28,25 @@
      box-sizing: border-box;
      cursor: pointer;
      font-size: 15px;
+     font-weight: bold;
      transition: background-color 0.3s;
 }
  .btn:hover {
     background-color: #ffffff;
+}
+.ui-widget-overlay{
+    background: #000000;
+    opacity: 0.5;
+}
+.ui-draggable .ui-dialog-titlebar{
+    background-color: #93af36
+}
+.ui-dialog-title{
+    text-align: center;
+}
+#thankyouText{
+    text-align: center;
+    padding: 20px;
 }
  .contact{
      font-family: poiret one;
@@ -68,6 +83,7 @@
  #googleMap{
      border-radius: 15px;
      padding-top: 10px;
+     max-width: 300px;
 }
  @media screen and (min-width: 800px){
      .bookingForm{
