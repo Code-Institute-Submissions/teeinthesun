@@ -4,11 +4,32 @@
      padding: 20px;
      text-align: justify;
 }
+ #propertyImage1{
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+ #propertyImage2{
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+ #propertyImage3{
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
+ #propertyImage4{
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+}
  @media screen and (min-width: 800px){
      .propertyInfo{
          grid-row: 3/5;
          grid-column: 1/3;
          font-size: 13px;
+         width: 88%;
     }
      #propertyImage1{
          grid-row: 3/4;

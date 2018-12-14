@@ -1,137 +1,142 @@
 <!DOCTYPE html>
 
-<html lang = "en">
+<html lang="en">
 
-	<head>
+<head>
 
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
-		<title>BOOKING - TEE IN THE SUN</title>
-		<link rel="icon" type="image/jpg" href="assets/favicon.jpg">
-		<link href="https://fonts.googleapis.com/css?family=Poiret+One|Dosis" rel="stylesheet"> 
-		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
-		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/bookingPage.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>BOOKING - TEE IN THE SUN</title>
+    <link rel="icon" type="image/jpg" href="assets/favicon.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One|Dosis" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/bookingPage.css">
 
-	</head>
+</head>
 
-	<body>
+<body>
 
-	<!-- Bootstrap navigation bar -->
-		<nav class="navbar navbar-inverse">
-			<nav class="navbar">
-				<button class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<nav class="collapse navbar-collapse" id="mynavbar">
-					<ul class="nav navbar-nav" >
-						<li><a class="navbar-style" href="index.html">HOME</a></li>
-						<li><a class="navbar-style" href="property.html">PROPERTY</a></li>
-						<li><a class="navbar-style" href="resort.html">RESORT</a></li>
-						<li><a class="navbar-style" href="pricing.html">PRICING</a></li>
-						<li><a class="navbar-style" href="booking.html">BOOKING</a></li>
-					</ul>
-				</nav>
-			</nav>	
-		</nav>
+    <!-- Bootstrap navigation bar -->
+    <nav class="navbar navbar-inverse">
+        <nav class="navbar">
+            <button class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <nav class="collapse navbar-collapse" id="mynavbar">
+                <ul class="nav navbar-nav">
+                    <li><a class="navbar-style" href="index.html">HOME</a></li>
+                    <li><a class="navbar-style" href="property.html">PROPERTY</a></li>
+                    <li><a class="navbar-style" href="resort.html">RESORT</a></li>
+                    <li><a class="navbar-style" href="pricing.html">PRICING</a></li>
+                    <li><a class="navbar-style" href="booking.html">BOOKING</a></li>
+                </ul>
+            </nav>
+        </nav>
+    </nav>
 
-		<div class="container">
+    <div class="container">
 
-		<header>BOOKING</header>
+        <header>BOOKING</header>
 
-		<div class="bookingForm">
-			
-			<form name="booking" action="#" onsubmit="alertFunction(); return false">
-				<strong>Please fill the booking form stating the dates you would like to stay. We will get back to you with confirmation as soon as possible.</strong><br><br>
+        <div class="bookingForm">
 
-				<label for="name" class="field">Name:</label>
-				<input type="text" placeholder="Required field" required autocomplete="name" name="Name"/><br>
+            <form name="booking" action="#" onsubmit="alertFunction(); return false">
+                <strong>Please fill the booking form stating the dates you would like to stay. 
+				We will get back to you with confirmation as soon as possible.</strong>
+                <br>
+                <br>
 
-				<label for="phone" class="phone">Phone:</label>
-				<input id="phone" name="phone" placeholder="Please enter a valid telephone number (11 digits)" required autocomplete="tel-national" type="tel" pattern="[0-9]{11}" />
+                <label for="name" class="field">Name:</label>
+                <input type="text" placeholder="Required field" required autocomplete="name" name="Name" />
+                <br>
 
-				<label for="email" class="field">Email:</label>
-				<input id="email" name="email" placeholder="Enter email" required autocomplete="email" type="email"/>
+                <label for="phone" class="phone">Phone:</label>
+                <input id="phone" name="phone" placeholder="Please enter a valid telephone number (11 digits)" required autocomplete="tel-national" type="tel" pattern="[0-9]{11}" />
 
-				<label for="arrival" class="arrival">Arrival:</label>
-				<input type="text" class="form-control" id="start-date" name="start-date" placeholder="MM/DD/YYYY" required>
-				
-				<label for="nights" class="nights">Nights (Please call for longer than 14 nights):</label>
-				<select name="price" id="nights" data-rule-required="true" onchange="calculatePrice()" required>
-					<option value=""> </option>
-					<option value="50">1</option>
-					<option value="100">2</option>
-					<option value="150">3</option>
-					<option value="200">4</option>
-					<option value="250">5</option>
-					<option value="300">6</option>
-					<option value="350">7</option>
-					<option value="400">8</option>
-					<option value="450">9</option>
-					<option value="500">10</option>
-					<option value="550">11</option>
-					<option value="600">12</option>
-					<option value="650">13</option>
-					<option value="700">14</option>
-				</select>
+                <label for="email" class="field">Email:</label>
+                <input id="email" name="email" placeholder="Enter email" required autocomplete="email" type="email" />
 
-				<label for="people" class="people">Guests:</label>
-				<select name="group" id="people" data-rule-required="true"  onchange="calculatePrice()" required>
-					<option value=""></option>
-					<option value="1">1</option>
-					<option value="2">2</option>
-					<option value="3">3</option>
-					<option value="4">4</option>
-				</select>
+                <label for="arrival" class="arrival">Arrival:</label>
+                <input type="text" class="form-arrival" id="start-date" name="start-date" placeholder="MM/DD/YYYY" required>
 
-				<label for="totalPrice" class="totalPrice">Total Price:</label>
-				<input name="totalPrice" id="totalPrice" disabled="true" data="" />
+                <label for="nights" class="nights">Nights (Please call for longer than 14 nights):</label>
+                <select name="price" id="nights" data-rule-required="true" onchange="calculatePrice()" required>
+                    <option value=""> </option>
+                    <option value="50">1</option>
+                    <option value="100">2</option>
+                    <option value="150">3</option>
+                    <option value="200">4</option>
+                    <option value="250">5</option>
+                    <option value="300">6</option>
+                    <option value="350">7</option>
+                    <option value="400">8</option>
+                    <option value="450">9</option>
+                    <option value="500">10</option>
+                    <option value="550">11</option>
+                    <option value="600">12</option>
+                    <option value="650">13</option>
+                    <option value="700">14</option>
+                </select>
 
-				<button type="submit" class="btn">Send Enquiry 
-					<i class="fa fa-paper-plane-o" aria-hidden="true"></i>	
-				</button>						
-			</form>
+                <label for="people" class="people">Guests:</label>
+                <select name="group" id="people" data-rule-required="true" onchange="calculatePrice()" required>
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
 
-		</div>
+                <label for="totalPrice" class="totalPrice">Total Price:</label>
+                <input name="totalPrice" id="totalPrice" disabled="true" data="" />
 
-		<!-- Modal Submit Popup -->
-		<div id="thankyouModal" tabindex="-1" role="dialog" title="Thank you!" style="display:none">
-			<p id="thankyouText">Booking form successfully submitted. Thank you, We will get back to you soon!</p>
-			<a href="index.html" class="btn">Go to Home</a>
-		</div>
+                <button type="submit" class="btn">Send Enquiry
+                    <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                </button>
+            </form>
 
-				<div class="contact">
-					<h2>CONTACT US</h2>
-					<br>
-					<ul>
-		         		<li><i class="fa fa-envelope fa-2x"><a class="contact" href="mailto:#" title="Contact us">info@teeinthesun.com</a></i></li><br>
-		           		<li><i class="fa fa-phone fa-2x"><a class="contact" href="#" title="Call us">+44 (0)1234567890</a></i></li>
-		           		<br>
-		           		<li>
-		           			<!-- Social media links -->
-		           			<a class="social-media" href="https://www.facebook.com/Latorregr/"><i class="fa fa-facebook-square fa"></i></a>
-		           			<a class="social-media" href="https://www.instagram.com/latorregolfresort/"><i class="fa fa-instagram fa"></i></a>
-		           			<a class="social-media" href="https://twitter.com/latorregolf1"><i class="fa fa-twitter fa"></i></a>
-		           		</li>	
-		         	</ul>
+        </div>
 
-						<iframe id="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d403681.86165677384!2d-1.1835159951436192!3d37.772118760377566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6371dcbb9d7c17%3A0x79d17591e94df1d5!2sLa+Torre+Golf+Resort!5e0!3m2!1sen!2suk!4v1524750315257" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>	
-				</div>
-		
-			</div>
+        <!-- Modal Submit Popup -->
+        <div id="thankyouModal" tabindex="-1" role="dialog" title="Thank you!" style="display:none">
+            <p id="thankyouText">Booking form successfully submitted. Thank you, We will get back to you soon!</p>
+            <a href="index.html" class="btn">Go to Home</a>
+        </div>
 
-		<footer>Charlotte Skinner - Copyright 2018.</footer>
+        <div class="contact">
+            <h2>CONTACT US</h2>
+            <br>
+            <ul>
+                <li><i class="fa fa-envelope fa-2x"><a class="contact" href="mailto:#" title="Contact us">info@teeinthesun.com</a></i></li>
+                <br>
+                <li><i class="fa fa-phone fa-2x"><a class="contact" href="#" title="Call us">+44 (0)1234567890</a></i></li>
+                <br>
+                <li>
+                    <!-- Social media links -->
+                    <a class="social-media" href="https://www.facebook.com/Latorregr/"><i class="fa fa-facebook-square fa"></i></a>
+                    <a class="social-media" href="https://www.instagram.com/latorregolfresort/"><i class="fa fa-instagram fa"></i></a>
+                    <a class="social-media" href="https://twitter.com/latorregolf1"><i class="fa fa-twitter fa"></i></a>
+                </li>
+            </ul>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-		<script src="js/script.js"></script>
-		<script src="js/form.js"></script>
+            <iframe id="googleMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d403681.86165677384!2d-1.1835159951436192!3d37.772118760377566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6371dcbb9d7c17%3A0x79d17591e94df1d5!2sLa+Torre+Golf+Resort!5e0!3m2!1sen!2suk!4v1524750315257" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
 
-	</body>
+    </div>
+
+    <footer>Charlotte Skinner - Copyright 2018.</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/form.js"></script>
+
+</body>
 
 </html>

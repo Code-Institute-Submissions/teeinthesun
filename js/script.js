@@ -6,5 +6,4 @@ $(document).ready(function() { // Run this code when DOM is ready });
         'resizeDuration': 100,
         'wrapAround': true
     });
-
 });
