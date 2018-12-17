@@ -1,15 +1,15 @@
 # [Tee in the Sun](https://charlotteskinner90.github.io/teeinthesun/) - a Golfing holiday home rental website
 
-The purpose of this website is to advertise a holiday townhouse for rental on a golf resort in Spain. The site details the accomodation available, the resort facilities and offers an easy way to book their holiday. Tee in the Sun is easy for the user to navigate around with the navigation bar and has several aesthetic features which improve user experience. I have created this website to demonstrate the skills I have obtained from Stream One of the Full Stack Web Developer course. 
+The purpose of this website is to advertise a holiday townhouse for rental on a golf resort in Spain. The site illustrates the accomodation available, the resort facilities, and offers an easy way for users to send a booking enquiry. Navigating around Tee in the Sun is straightforward with the navigation bar and has several aesthetic features which improve user experience. I have created this website to demonstrate the skills I have obtained from Stream One of the Code Institute Full Stack Web Developer course. 
  
 ## UX
 
-This site is aimed at adults, families or groups who are looking for a holiday rental apartment on a golfing resort in Spain. The original [site](http://www.golfballsinthesun.com/) this is based off of was looking a bit dated, so I wanted to rebuild the front-end of the site so that it was more appealing and had a better UX experience for the user. 
+This site is aimed at adults, families or groups who are looking for a holiday rental apartment on a golfing resort in Spain. The original [site](http://www.golfballsinthesun.com/) this is based off of was looking a bit dated in terms of the UI, so I wanted to rebuild the front-end of the site so that it was more appealing and had a better UX experience for the user. 
 
 ### User Stories
 
-- The user would like to view information about the resort and the property for rental: The user lands on the homepage, where they have the option via the navigation bar to look through information regarding the resort, the property and the cost of renting the property. There are images of the property and resort on their respective pages, and a video showing the resort facilities. There are links to social media accounts, and an interactive map.
-- The user would like to book the holiday apartment - The user has the option to go straight to the booking page. They may be a regular visitor or have visted the resort before. On the booking page, there is an enquiry form that the user can fill out with their details and desired date of stay. The form has a calculator to work out how much the users stay at the resort will cost for the rental of the property.
+- The user would like to view information about the resort and the property for rental: The user lands on the homepage, where they have the option via the navigation bar to look through information regarding the resort, the property and the cost of renting the property. There are images of the property and resort, and a video showing the resort facilities. There are links to social media accounts, and an interactive map.
+- The user would like to book the holiday apartment: The user has the option to go straight to the booking page. They may be a regular visitor or have visted the resort before. On the booking page, there is an enquiry form that the user can fill out with their details and desired date of stay. The form has a calculator to work out how much the users stay at the resort will cost for the rental of the property.
  
 The site has been created with a mobile-first design, so the navigation bar shrinks down to a hamburger icon on mobile/tablet and images line up vertically. I have attached a PDF of the desktop wireframe for this site here: ![Wireframe PDF](/blob/master/teeinthesun_wireframe.pdf "Wireframe") 
 This wireframe was built using [Mockflow](https://www.mockflow.com/)
@@ -44,13 +44,13 @@ I have carried out manual testing on the site to ensure that all the features ar
  - Each of the links in the navigation bar navigate to the page they are supposed to. 
  - The images that have the added lightbox functionality react as a pop-up when clicked and close when the 'X' button is clicked.
  - Social media links (icons) route to the necessary social media sites
- - Booking form: Each of the fields in this form are set to be 'required', meaning there are validation features that appear if these are not complete or completed with invalid input. The phone and email input fields appear with a red outline if the input is incorrect or left blank. A guidance note also appears under the input field if this is the case. Once all fields are entered correctly and the submit button is clicked, an alert window will open at the top of the screen to indicate that the form has been submitted. 
+ - Booking form: Each of the fields in this form are set to be 'required', meaning there are validation features that appear if these are not complete or completed with invalid input. The phone and email input fields appear with a red outline if the input is incorrect or left blank. A guidance note also appears under the input field if this is the case. Once all fields are entered correctly and the submit button is clicked, an alert window will open at the top of the screen to indicate that the form has been submitted. The price calculator displays the cost for the stay based on the number of guests staying and number of days they are staying for.
 
 ## Deployment
 
-- This project was deployed to [Github Pages](https://charlotteskinner90.github.io/teeinthesun/): The code was committed to Github, and then Github pages was configured in the settings of this repository.
+This project was deployed to [Github Pages](https://charlotteskinner90.github.io/teeinthesun/): The code was committed to Github, and then Github pages was configured in the settings of this repository.
 
-### Contributing 
+## Contributing 
 
 1. Firstly you will need to clone the repository for 'Tee in the Sun' by running ```git clone <https://github.com/charlotteskinner90/teeinthesun.git>``` command
 2. Make your changes
