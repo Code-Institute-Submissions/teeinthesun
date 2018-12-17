@@ -1,6 +1,6 @@
 # [Tee in the Sun](https://charlotteskinner90.github.io/teeinthesun/) - a Golfing holiday home rental website
 
-The purpose of this website is to advertise a holiday townhouse for rental on a golf resort in Spain. I have created this website to demonstrate the skills I have obtained from Stream One of the Full Stack Web Developer course
+The purpose of this website is to advertise a holiday townhouse for rental on a golf resort in Spain. The site details the accomodation available, the resort facilities and offers an easy way to book their holiday. Tee in the Sun is easy for the user to navigate around with the navigation bar and has several aesthetic features which improve user experience. I have created this website to demonstrate the skills I have obtained from Stream One of the Full Stack Web Developer course. 
  
 ## UX
 
@@ -8,31 +8,33 @@ This site is aimed at adults, families or groups who are looking for a holiday r
 
 ### User Stories
 
-The user lands on the homepage, where they have the option via the navigation bar to look through information regarding the resort, the property and the cost of renting the property. The user has the option to go straight to the booking page if they are a regular or have visted the resort before. There are images of the property and resort on their respective pages, and a video showing the resort facilities. On the booking page, there is an enquiry form that the user can fill out with their details and desired date of stay. The form has a calculator to work out how much the user's stay at the resort will cost for the rental of the property. There are links to social media accounts, and an interactive map.
+- The user would like to view information about the resort and the property for rental: The user lands on the homepage, where they have the option via the navigation bar to look through information regarding the resort, the property and the cost of renting the property. There are images of the property and resort on their respective pages, and a video showing the resort facilities. There are links to social media accounts, and an interactive map.
+- The user would like to book the holiday apartment - The user has the option to go straight to the booking page. They may be a regular visitor or have visted the resort before. On the booking page, there is an enquiry form that the user can fill out with their details and desired date of stay. The form has a calculator to work out how much the users stay at the resort will cost for the rental of the property.
  
-The site has been mobile optimised, so the navigation bar shrinks down to a hamburger icon on mobile/tablet and images line up vertically.
- 
-I have attached a PDF of the wireframe for this site here: ![Wireframe PDF](/blob/master/teeinthesun_wireframe.pdf "Wireframe") 
+The site has been created with a mobile-first design, so the navigation bar shrinks down to a hamburger icon on mobile/tablet and images line up vertically. I have attached a PDF of the desktop wireframe for this site here: ![Wireframe PDF](/blob/master/teeinthesun_wireframe.pdf "Wireframe") 
 This wireframe was built using [Mockflow](https://www.mockflow.com/)
 
 ## Features
 
 ### Existing Features
 - Fully responsive layout at various screen sizes
-- Tables to display pricing options
-- Booking form with validation
-- Links to social media accounts of the golf resort
-- Lightbox image pop-ups when you click on an image
+- Use of a [table](https://github.com/charlotteskinner90/teeinthesun/blob/master/pricing.html) to display pricing options
+- [Booking form](https://github.com/charlotteskinner90/teeinthesun/blob/master/booking.html) with validation - a 'thank you' [pop-up](https://github.com/charlotteskinner90/teeinthesun/blob/master/js/form.js) appears upon successful completion of the form.
+- [Pricing calculator](https://github.com/charlotteskinner90/teeinthesun/blob/master/js/form.js) on the booking form
+- Links to [social media](https://github.com/charlotteskinner90/teeinthesun/blob/master/booking.html) accounts of the golf resort
+- [Lightbox](https://github.com/charlotteskinner90/teeinthesun/blob/master/property.html) image pop-ups when you click on an image on the property and pricing pages.
 
 ## Technologies Used
 
 The technologies that I have used to build this site are:
- - HTML5 for the structure of the website elements
- - CSS3 for styling of the components
- - CSS Grid for the flexible layout of the website
- - Bootstrap for the responsive navigation bar
- - JQuery and Javascript to enable the lightbox feature on the images and to change the colour of buttons/social media links upon hovering.
- - Javascript is also used to manage the alert box and datepicker on the booking form, and is used to power the price calculator on the booking form.
+ - [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)) for the structure of the website elements.
+ - [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS) for styling of the components (e.g. colour schemes, fonts, images). I have separated the CSS content into different files for consistency and readability.
+ - [CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) for the flexible layout of the website.
+ - [Bootstrap](https://getbootstrap.com/) for the responsive navigation bar.
+ - [Google fonts](https://fonts.google.com/) (Poiret One and Arial used throughout)
+ - [JQuery](https://jquery.com/) and [Javascript](https://www.javascript.com/) to enable the [lightbox](https://www.lokeshdhakar.com/projects/lightbox2/) feature on the images and to change the colour of buttons/social media links upon hovering.
+ - [Javascript](https://www.javascript.com/) is also used to manage the alert box and datepicker on the booking form, and is used to power the price calculator on the booking form.
+ - Git/[Github](https://github.com/charlotteskinner90/teeinthesun) for version control.
 
 
 ## Testing
